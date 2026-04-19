@@ -12,8 +12,11 @@ body {
 }
 
 iframe {
-  border: none;
+  border: 1px solid white;
+  padding: 4px;
+  background: black;
 }
+
 pre {
   text-align: left;
   background: #111;
@@ -28,12 +31,33 @@ pre {
 
 <body>
 
-<h1>a burst of color</h1>
+<h1>a burst of emotions</h1>
 
-<!-- your tool preview -->
-<iframe src="diyps2026/index.html" height="610" width="610" title="diy ps"></iframe>
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
 
-<h2>Code</h2>
+  <div style="text-align: center;">
+
+    <iframe src="index.html" height="610" width="610"
+      style="border: 1px solid white; padding: 4px;"></iframe>
+
+    <h3 style="max-width: 610px; margin: 10px auto;">
+      this is an art project created using p5.js. i wanted to portray different visual effects and explores creativity through digital marks ranging from structured to chaotic forms. (use 1-0 to access tools)
+    </h3>
+
+  </div>
+
+  <div style="text-align: center;">
+
+    <img src="emotionsexample.jpg" width="610"
+      style="border: 1px solid white;">
+
+    <h3>an example!</h3>
+
+  </div>
+
+</div>
+
+<h2>code</h2>
 
 <pre>
 var img;
