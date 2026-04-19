@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DIY Photoshop (n.a)</title>
+
+<style>
+body {
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+iframe {
+  border: none;
+}
+pre {
+  text-align: left;
+  background: #111;
+  padding: 15px;
+  width: 80%;
+  margin: 20px auto;
+  overflow-x: auto;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>a burst of color</h1>
+
+<!-- your tool preview -->
+<iframe src="diyps2026/index.html" height="610" width="610" title="diy ps"></iframe>
+
+<h2>Code</h2>
+
+<pre>
+var img;
+var initials ='na'; 
+var choice = '1';
+var screenbg = 0;
+var lastscreenshot=61;
+
+function preload() {
+  img = loadImage('https://dma-git.github.io/images/74.png');
+}
+
+function setup() {
+  createCanvas(606, 606);
+  background(screenbg);
+}
+
+function draw() {
+  if (keyIsPressed) {
+    choice = key;
+    clear_print();
+  }
+
+  if (mouseIsPressed){
+    newkeyChoice(choice);
+  }
+
+  noStroke();
+  fill(255);
+  textSize(12);
+  textAlign(CENTER);
+  text("1-0 tools | G image | X clear | P save", width/2, 20);
+}
+
+function newkeyChoice(toolChoice) {
+
+  noFill();
+
+  if (toolChoice == '1') {
+    stroke(180,180,255,180);
+    strokeWeight(2);
+    line(mouseX,mouseY,pmouseX,pmouseY);
+
+  } else if (toolChoice == '2') {
+    stroke(255);
+    strokeWeight(6);
+    line(mouseX,mouseY,pmouseX,pmouseY);
+
+  } else if (toolChoice == '3') {
+    stroke(random(255),random(100),255,180);
+    strokeWeight(2);
+    line(mouseX,mouseY,pmouseX,pmouseY);
+
+  } else if (toolChoice == '4') {
+    stroke(255);
+    strokeWeight(3);
+    line(mouseX,mouseY,pmouseX,pmouseY);
+
+  } else if (toolChoice == '5') {
+    stroke(255,255,255,120);
+    rect(mouseX-30,mouseY-30,60,60);
+    stroke(0,200,255,150);
+    rect(mouseX-20,mouseY-20,40,40);
+
+  } else if (toolChoice == '6') {
+    stroke(255,255,255,40);
+    strokeWeight(10);
+    line(mouseX,mouseY,pmouseX,pmouseY);
+
+  } else if (toolChoice == '7') {
+    stroke(200);
+    strokeWeight(2);
+    line(mouseX-15,mouseY,mouseX+15,mouseY);
+    line(mouseX,mouseY-15,mouseX,mouseY+15);
+
+  } else if (toolChoice == '8') {
+    stroke(255,50,50);
+    strokeWeight(4);
+    line(mouseX-20,mouseY-20,mouseX+20,mouseY+20);
+    line(mouseX+20,mouseY-20,mouseX-20,mouseY+20);
+
+  } else if (toolChoice == '9') {
+    stroke(0,200,255);
+    strokeWeight(2);
+    for (let i=0;i<5;i++){
+      line(mouseX,mouseY,mouseX+random(-40,40),mouseY+random(-40,40));
+    }
+
+  } else if (toolChoice == '0') {
+    noStroke();
+    fill(random(255),random(255),random(255),180);
+    rect(mouseX+random(-50,50),mouseY+random(-50,50),12,12);
+
+  } else if (toolChoice == 'g' || toolChoice == 'G') {
+    image(img, mouseX, mouseY, 60, 60);
+  }
+}
+
+function clear_print() {
+  if (key == 'x' || key == 'X') {
+    background(screenbg);
+  } else if (key == 'p' || key == 'P') {
+    saveCanvas("drawing", "jpg");
+  }
+}
+</pre>
+
+</body>
+</html>
