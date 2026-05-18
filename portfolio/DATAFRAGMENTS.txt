@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>DATA FRAGMENTS | Nikki Abril</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+background:#050505;
+color:white;
+font-family:'Lexend', sans-serif;
+text-align:center;
+}
+
+/* NAV */
+.navbar{
+background:#111 !important;
+box-shadow:0 2px 15px rgba(0,0,0,0.5);
+}
+
+/* TITLE */
+.title{
+color:#ffd900;
+font-size:3rem;
+margin-top:30px;
+text-shadow:0 0 12px rgba(255,217,0,0.3);
+}
+
+/* TEXT */
+.description{
+max-width:900px;
+margin:20px auto 40px auto;
+line-height:1.8;
+padding:0 20px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+gap:18px;
+max-width:1100px;
+margin:0 auto;
+padding:20px;
+}
+
+/* ASSET BLOCK */
+.asset{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/* IMAGE */
+.asset img{
+width:100%;
+border-radius:12px;
+border:1px solid #333;
+cursor:pointer;
+transition:0.25s;
+}
+
+/* GLITCH HOVER */
+.asset img:hover{
+transform:scale(1.05) skewX(2deg);
+filter:contrast(1.6) saturate(1.3) hue-rotate(18deg);
+box-shadow:0 0 18px rgba(255,217,0,0.25);
+}
+
+/* FILE INFO */
+.file-info{
+font-family:monospace;
+font-size:11px;
+margin-top:8px;
+color:#bdbdbd;
+opacity:0.85;
+line-height:1.4;
+}
+
+/* LIGHTBOX */
+.lightbox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.92);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+
+.lightbox img{
+max-width:85%;
+max-height:85%;
+border-radius:15px;
+border:2px solid white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container-fluid">
+
+<a class="navbar-brand text-white" href="index.html">
+nikki abril's portfolio !!
+</a>
+
+<div class="collapse navbar-collapse" id="nav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+<li class="nav-item"><a class="nav-link" href="glitch.html">glitch</a></li>
+<li class="nav-item"><a class="nav-link" href="meme.html">meme</a></li>
+<li class="nav-item"><a class="nav-link" href="minecraftart.html">minecraft art</a></li>
+<li class="nav-item"><a class="nav-link" href="3dprint.html">3d printing</a></li>
+<li class="nav-item"><a class="nav-link" href="netart.html">net art</a></li>
+<li class="nav-item"><a class="nav-link" href="self portrait selfie.html">self portrait</a></li>
+<li class="nav-item"><a class="nav-link" href="diyphotoshopportfoliofinal.html">DIY Photoshop</a></li>
+<li class="nav-item"><a class="nav-link" href="RingCollect.html">Ring Collect!</a></li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- TITLE -->
+<div class="title">DATA FRAGMENTS</div>
+
+<!-- DESCRIPTION -->
+<div class="description">
+
+<p><strong>DATA FRAGMENTS</strong> is a digital media art series inspired by analog horror and lost media content.
+I use personal photographs of myself and my family and intentionally glitch them to resemble recovered or damaged archival material.</p>
+
+<p>The work explores memory, identity, and how familiar images become unstable when treated as corrupted records.</p>
+
+</div>
+
+<!-- GRID -->
+<div class="grid">
+
+<!-- 1 -->
+<div class="asset">
+<img src="FINALbrandonnewyrs-echo%20eq%20copy.jpg">
+<div class="file-info">FILE: FINALbrandon_newyears_echo.dat<br>DATE: 2003-06-14 03:22:18</div>
+</div>
+
+<!-- 2 -->
+<div class="asset">
+<img src="FINALizzy1%20distortion%20and%20echo%20copy.jpg">
+<div class="file-info">FILE: FINALizzy_distortion_echo.dat<br>DATE: 2003-06-14 03:24:09</div>
+</div>
+
+<!-- 3 -->
+<div class="asset">
+<img src="FINALme%20aqua%20distort%20delay%20repeat%20phaser%20copy.jpg">
+<div class="file-info">FILE: FINALme_aqua_signal_drift.dat<br>DATE: 2003-06-14 03:25:44</div>
+</div>
+
+<!-- 4 -->
+<div class="asset">
+<img src="FINALlogsnewyrs%20-delay%20and%20reverse%20copy.jpg">
+<div class="file-info">FILE: FINALlogs_newyears_reverse.dat<br>DATE: 2003-06-14 03:27:01</div>
+</div>
+
+<!-- 5 -->
+<div class="asset">
+<img src="FINALreverb%20distort%20repeat%20bran%20copy.jpg">
+<div class="file-info">FILE: FINALreverb_fragment_branch.dat<br>DATE: 2003-06-14 03:28:33</div>
+</div>
+
+<!-- 6 -->
+<div class="asset">
+<img src="FINALSab2%20repeat%20and%20echo%20copy.jpg">
+<div class="file-info">FILE: FINALSab2_echo_loop.dat<br>DATE: 2003-06-14 03:31:12</div>
+</div>
+
+<!-- 7 -->
+<div class="asset">
+<img src="FINALstndebut%20reverb%20and%20trem%20copy.jpg">
+<div class="file-info">FILE: FINALstn_debut_tremor.dat<br>DATE: 2003-06-14 03:33:47</div>
+</div>
+
+<!-- 8 -->
+<div class="asset">
+<img src="FINALtino%20delay%20distort%20and%20fade%20in%20copy.jpg">
+<div class="file-info">FILE: FINALtino_fade_corrupt.dat<br>DATE: 2003-06-14 03:35:59</div>
+</div>
+
+<!-- 9 -->
+<div class="asset">
+<img src="FINALtinoaqua2%20again%20copy.jpg">
+<div class="file-info">FILE: FINALtinoaqua_repeat.dat<br>DATE: 2003-06-14 03:38:21</div>
+</div>
+
+<!-- 10 -->
+<div class="asset">
+<img src="FINAL%20BUT%20SMALL%20WINDOWrepeat%20delay%20distort%20close%20up%20copy.jpg">
+<div class="file-info">FILE: FINAL_window_closeup_fragment.dat<br>DATE: 2003-06-14 03:41:03</div>
+</div>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+<img id="lightboxImg">
+</div>
+
+<script>
+const images = document.querySelectorAll(".asset img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+
+images.forEach(img => {
+img.addEventListener("click", () => {
+lightbox.style.display = "flex";
+lightboxImg.src = img.src;
+});
+});
+
+lightbox.addEventListener("click", () => {
+lightbox.style.display = "none";
+});
+</script>
+
+</body>
+</html>

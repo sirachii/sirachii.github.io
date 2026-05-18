@@ -1,57 +1,114 @@
 <!DOCTYPE html>
-<!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<html lang="en">
 
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<head>
 
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html>
-<head>
-<title>nikki abril's portfolio</title>
+<title>Meme Mashup | Nikki Abril</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- FONT (Lexend = portfolio standard) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 body{
-background-color:black;
+background:#0b0b0b;
 color:white;
 text-align:center;
+font-family:'Lexend', sans-serif;
 }
 
-/* make headings white */
-h2, h4{
-color:white;
+/* NAVBAR */
+.navbar-brand{
+font-weight:700;
+letter-spacing:1px;
 }
 
-/* rounded corners for all images */
-img{
+.nav-link:hover{
+color:#ffd900 !important;
+}
+
+/* MAIN IMAGE */
+.main-image{
+width:100%;
+max-width:900px;
 border-radius:20px;
+box-shadow:0 0 18px rgba(255,255,255,0.12);
+margin-top:30px;
 }
 
-/* keep groups of images side by side */
+/* TEXT */
+.description{
+max-width:900px;
+margin:30px auto;
+line-height:1.9;
+font-weight:300;
+color:#eaeaea;
+padding:0 20px;
+}
+
+/* SECTION TITLE */
+.section-title{
+margin-top:50px;
+font-size:2rem;
+font-weight:700;
+color:#ffd900;
+}
+
+/* IMAGE GRID */
+.image-row{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+margin-top:25px;
+}
+
 .image-row img{
-display:inline-block;
-margin:15px;
+border-radius:18px;
+max-width:100%;
+height:auto;
+box-shadow:0 0 14px rgba(255,255,255,0.08);
+transition:0.3s;
 }
 
-/* readable paragraph width */
-h4{
-width:60%;
-margin:20px auto;
+.image-row img:hover{
+transform:scale(1.02);
 }
+
 </style>
 
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-<div class="container-fluid">
-<h2 style="color: white;">nikki abril's portfolio !!</h2>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-<ul class="navbar-nav">
+<div class="container-fluid">
+
+<a class="navbar-brand" href="index.html">
+nikki abril's portfolio !!
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+
+<ul class="navbar-nav ms-auto">
+
 <li class="nav-item">
-<a class="nav-link active" href="index.html">home</a>
+<a class="nav-link" href="index.html">home</a>
 </li>
 
 <li class="nav-item">
@@ -59,7 +116,7 @@ margin:20px auto;
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="meme.html">meme</a>
+<a class="nav-link active" href="meme.html">meme</a>
 </li>
 
 <li class="nav-item">
@@ -73,29 +130,66 @@ margin:20px auto;
 <li class="nav-item">
 <a class="nav-link" href="netart.html">net art</a>
 </li>
+
+<li class="nav-item">
+<a class="nav-link" href="self portrait selfie.html">self portrait</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="diyphotoshopportfoliofinal.html">DIY Photoshop</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="RingCollect.html">Ring Collect!</a>
+
+<li class="nav-item"><a class="nav-link active" href="DATAFRAGMENTS.html">DATA FRAGMENTS</a></li>
+
 </ul>
+
+</div>
 
 </div>
 </nav>
 
-<div class="image-row">
-<img class="img-fluid" src="speedamicookedmashup.jpg" alt="mememashup" width="900">
+<!-- CONTENT -->
+<div class="container py-4">
+
+<!-- MAIN WORK -->
+<img class="main-image img-fluid"
+src="speedamicookedmashup.jpg"
+alt="meme mashup">
+
+<!-- DESCRIPTION -->
+<div class="description">
+
+<p>
+Speed is a very expressive creator, and Freddy from Five Nights at Freddy’s is a classic meme icon.
+I wanted to explore an internal vs external emotional clash in a high-stress scenario.
+</p>
+
+<p>
+I used Photoshop extensively with color balance, lighting matching, quick masks, opacity layers,
+shading, and filters. Through this project, I realized Photoshop feels similar to digital painting
+tools like ibisPaint X, just with more complex control.
+</p>
+
 </div>
 
-<h4>
-Speed is a very expressive guy and Freddy from Five Nights At Freddy is too memeable and a classic. I wanted to give it that internal vs. external feeling in scary situations and I came up with this. I heavily relied on Photoshop with color balance, lighting matching and cropping, quick masks, opacity layers, shading and filters. After exploring Photoshop for a bit, I realized it was just a more complicated version of a drawing program that I use for digital art (ibispaint x). I went from there and experimented.
-</h4>
-
-<br>
-
-<h2>Images used</h2>
+<!-- SOURCES -->
+<div class="section-title">
+images used
+</div>
 
 <div class="image-row">
-<img class="img-fluid" src="speedwatches.jpeg" alt="watches" width="450">
-<img class="img-fluid" src="terrified-ishowspeed.jpg" alt="terrified" width="450">
-<img class="img-fluid" src="spunch_bob.jpg" alt="sponge" width="450">
-<img class="img-fluid" src="am i cooked.jpeg" alt="cooked" width="450">
-<img class="img-fluid" src="knife.png" alt="knife" width="450">
+
+<img src="speedwatches.jpeg" alt="speed watches" width="300">
+<img src="terrified-ishowspeed.jpg" alt="terrified" width="300">
+<img src="spunch_bob.jpg" alt="spongebob" width="300">
+<img src="am i cooked.jpeg" alt="cooked" width="300">
+<img src="knife.png" alt="knife" width="300">
+
+</div>
+
 </div>
 
 </body>

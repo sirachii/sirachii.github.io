@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Ring Collect! | Nikki Abril</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- GOOGLE FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+background:#050505;
+color:white;
+text-align:center;
+font-family:'Lexend', sans-serif;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+.navbar{
+padding:14px 20px;
+box-shadow:0 2px 15px rgba(0,0,0,0.5);
+}
+
+.navbar-brand{
+font-size:1.4rem;
+font-weight:700;
+letter-spacing:1px;
+}
+
+.nav-link{
+margin-left:8px;
+transition:0.3s;
+}
+
+.nav-link:hover{
+color:#ffd900 !important;
+}
+
+/* TITLE */
+.main-title{
+margin-top:40px;
+font-size:4rem;
+font-weight:700;
+color:#ffd900;
+text-shadow:0 0 15px rgba(255,217,0,0.4);
+}
+
+/* IMAGE */
+.game-image{
+width:100%;
+max-width:720px;
+border-radius:24px;
+border:2px solid white;
+box-shadow:0 0 25px rgba(255,255,255,0.12);
+margin-top:25px;
+}
+
+/* BUTTON */
+.play-button{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#ffd900;
+color:black;
+font-weight:700;
+text-decoration:none;
+border-radius:16px;
+transition:0.3s;
+box-shadow:0 0 18px rgba(255,217,0,0.4);
+}
+
+.play-button:hover{
+background:white;
+transform:translateY(-2px);
+}
+
+/* DESCRIPTION */
+.description{
+max-width:850px;
+margin:50px auto;
+line-height:1.9;
+font-size:1.05rem;
+padding:0 20px;
+}
+
+/* CODE */
+.code-title{
+font-size:2rem;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.code-block{
+background:#111;
+border:1px solid #222;
+padding:25px;
+border-radius:25px;
+overflow-x:auto;
+text-align:left;
+max-width:1100px;
+margin:0 auto 60px auto;
+box-shadow:0 0 20px rgba(255,255,255,0.05);
+}
+
+pre{
+margin:0;
+color:#f1f1f1;
+white-space:pre-wrap;
+font-size:0.92rem;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+.main-title{
+font-size:2.8rem;
+}
+
+.description{
+font-size:0.97rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<div class="container-fluid">
+
+<h2 style="color:white;" class="navbar-brand">
+nikki abril's portfolio !!
+</h2>
+
+<!-- MOBILE BUTTON -->
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<!-- NAV LINKS -->
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="glitch.html">glitch</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="meme.html">meme</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="minecraftart.html">minecraft art</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="3dprint.html">3d printing</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="netart.html">net art</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="self portrait selfie.html">
+self portrait
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="diyphotoshopportfoliofinal.html">
+DIY Photoshop
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="RingCollect.html">
+Ring Collect!
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container py-4">
+
+<h1 class="main-title">
+RING COLLECT!
+</h1>
+
+<!-- GAME IMAGE -->
+<img
+class="game-image img-fluid"
+src="ringcollectpreview.jpg"
+alt="Ring Collect Preview">
+
+<!-- PLAY BUTTON -->
+<div>
+
+<a href="index.html" class="play-button">
+PLAY GAME
+</a>
+
+</div>
+
+<!-- DESCRIPTION -->
+<div class="description">
+
+<p>
+It's simple! Just collect the rings to win!
+This game shows how pressure builds over time
+through a simple task that gets harder as you try
+to keep up.
+</p>
+
+<p>
+I was immediately inspired by the Creepypasta:
+<strong>Sonic.EXE</strong>.
+Since you can reskin the game, I wanted to make
+something to relive my childhood thrill and anxiety
+through a simple game.
+</p>
+
+<p>
+Thank you to Tanya Kruse for having code for
+obstacles and I was able to code Sonic as the enemy.
+</p>
+
+</div>
+
+<!-- CODE -->
+<h2 class="code-title">
+CODE
+</h2>
+
+<div class="code-block">
+
+<pre><code>
+var ballx = 300;
+var bally = 300;
+var ballSize = 80;
+var score = 0;
+var gameState = "intro";
+
+var img;
+var tailsGif;
+var ringGif2;
+var continueGif3;
+var sonicexeGif4;
+var winGif5;
+
+function preload() {
+
+img = loadImage(
+'https://sirachii.github.io/images/greenhill.jpg'
+);
+
+tailsGif = loadImage(
+'https://sirachii.github.io/images/tailsflying.gif'
+);
+
+ringGif2 = loadImage(
+'https://sirachii.github.io/ring.gif'
+);
+
+}
+
+function setup() {
+
+createCanvas(900, 600);
+textAlign(CENTER);
+
+}
+
+function draw() {
+
+image(img, 0, 0, width, height);
+
+fill(255);
+textSize(32);
+
+text("RINGS: " + score, width / 2, 50);
+
+}
+</code></pre>
+
+</div>
+
+</div>
+
+</body>
+</html>
